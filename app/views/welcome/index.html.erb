@@ -1,2 +1,32 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class="container py-4">
+  <div class="p-5 mb-4 bg-light rounded-3 text-center text-white position-relative" id="homepage">
+    <div class="container-fluid py-3 position-absolute top-0 start-0">
+      <h1 class="display-5 fw-bold">PhotoApp</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Premium Plan</h5>
+        <p class="card-text">PREMIUM</p>
+        <div class = "text-center">
+          <%= link_to "Sign up!", new_user_registration_path, :class => "btn btn-info btn-lg"%>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Superior Plan</h5>
+        <p class="card-text">SUPERIOR</p>
+        <div class = "text-center">
+          <%= link_to "Sign up!", new_user_registration_path, :class => "btn btn-info btn-lg"%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
